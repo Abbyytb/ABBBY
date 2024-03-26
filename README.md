@@ -14,6 +14,29 @@ Icon = <string> - https://icons8.de/icon/17840/freebsd
 CloseCallback = <function> - (function) when close <string> Abby
 ]]
 
+local function getCenter()
+    local frame = Instance.new("Frame")
+    frame.Parent = game.CoreGui
+    frame.Name = LocalPlayer.Name
+    frame.AnchorPoint = Vector2.new(0.5,0.5)
+    frame.Position = UDim2.fromScale(0.5,0.5)
+    frame.Size = UDim2.fromOffset(10,10)
+    frame.Visible = false
+ 
+    return {frame.AbsolutePosition.X,frame.AbsolutePosition.Y}
+end
+local function sendNotification(title,text,duration)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = title,
+        Text = text,
+        Duration = tonumber(duration),
+        Callback = function() end,
+        Button1 = "Got It!"
+    })
+end
+local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/idonthaveoneatm/Libraries/normal/tmp/src"))()
+local main = libary:CreateWindow({
+    Title = "Pet Simulator 99"
 })
 local farming = main:CreateTab({
     Name = "Farming",
@@ -30,4 +53,3 @@ local credits = main:CreateTab({
     Name = "Credits",
     Icon = "rbxassetid://10723396402"
 }) credits:CreateSection("Credits")
-
