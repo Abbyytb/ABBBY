@@ -43,34 +43,7 @@ Tab:AddButton({
 
 --[[
 Name = <string> - Anti AFK
-Callback = <function> - function afkCommand(thePlayer, cmd) 
-    if isPedInVehicle(thePlayer) then 
-        outputChatBox("You must be on foot to use this command.", thePlayer, 255, 255, 255) 
-    else 
-        if isPedOnGround(thePlayer) then 
-            if getElementDimension(thePlayer) < 10 then 
-                outputChatBox("You will be AFK in 5 seconds", thePlayer, 255, 255, 255) 
-                setTimer( 
-                    function() 
-                        setElementDimension(thePlayer, math.random(10, 1000)) 
-                        setElementFrozen(thePlayer, true) 
-                    end, 5000, 1 
-                ) 
-            elseif getElementDimension(thePlayer) >= 10 and getElementDimension(thePlayer) <= 1000 then 
-                outputChatBox("You will be returned to the main dimension in 5 seconds", thePlayer, 255, 255, 255) 
-                setTimer( 
-                    function() 
-                        setElementDimension(thePlayer, 0) 
-                        setElementFrozen(thePlayer, false) 
-                    end, 5000, 1 
-                ) 
-            end 
-        else 
-            outputChatBox("You must be on the ground to use this command.", thePlayer, 255, 255, 255) 
-        end 
-    end 
-end 
-addCommandHandler("afk", afkCommand) 
+Callback = <function> - Make the player afk
   
 
 
