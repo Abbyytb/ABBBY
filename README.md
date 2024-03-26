@@ -45,6 +45,16 @@ Tab:AddButton({
 Name = <string> - Anti AFK
 Callback = <function> - Make the player afk
 
+
+
+local Section = Tab:AddSection({
+	Name = "Farming"
+})
+
+--[[
+Name = <string> - Farming
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Farming",
 	Icon = "rbxassetid://4483345998",
@@ -55,14 +65,6 @@ local Tab = Window:MakeTab({
 Name = <string> - Farming
 Icon = <string> - https://icons8.de/icon/38247/freebsd
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Farming"
-})
-
---[[
-Name = <string> - Farming
 ]]
 
 Tab:AddButton({
