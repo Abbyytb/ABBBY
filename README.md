@@ -1,3 +1,19 @@
+Tab:AddBind({
+	Name = "K",
+	Default = Enum.KeyCode.K,
+	Hold = false,
+	Callback = function()
+		print("press")
+	end    
+})
+
+--[[
+Name = <string> - The name of the bind.
+Default = <keycode> - The default value of the bind.
+Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
+Callback = <function> - The function of the bind.
+]]
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Made by Abby", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
@@ -44,38 +60,5 @@ Tab:AddButton({
 --[[
 Name = <string> - Anti AFK
 Callback = <function> - Make the player afk
-
-
-
-local Tab = Window:MakeTab({
-	Name = "Farming",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - Framing
-Icon = <string> - https://icons8.de/icon/38247/freebsd
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Farm Section"
-})
-
---[[
-Name = <string> - Farm Section
-]]
-
-Tab:AddButton({
-	Name = "Auto Farm",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - Auto Farm
-Callback = <function> - Auto Farms For you
 
 ]]
