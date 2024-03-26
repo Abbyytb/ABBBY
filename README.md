@@ -18,7 +18,7 @@ local function sendNotification(title,text,duration)
         Button1 = "Got It!"
     })
 end
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local main = libary:CreateWindow({
     Title = "Script made by Abby_ytb"
 })
