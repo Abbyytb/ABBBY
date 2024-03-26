@@ -14,43 +14,20 @@ Icon = <string> - https://icons8.de/icon/17840/freebsd
 CloseCallback = <function> - (function) when close <string> Abby
 ]]
 
-local Tab = Window:MakeTab({
-	Name = "Main",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
 })
-
---[[
-Name = <string> - Main
-Icon = <string> - https://icons8.de/icon/17840/freebsd
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-
-local Section = Tab:AddSection({
-	Name = "Main Section"
-})
-
---[[
-Name = <string> - Main Section:
-]]
-
---[[
-Name = <string> - AFK
-Callback = <function> - AFK
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Auto Farm",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
+local farming = main:CreateTab({
+    Name = "Farming",
+    Icon = "rbxassetid://10709769841"
+}) farming:CreateSection("Farming")
+local egg = main:CreateTab({
+    Name = "Egging",
+    Icon = "rbxassetid://10723345518"
+}) egg:CreateSection("Egging")
+local teleports = main:CreateTab({
+    Name = "Teleports"
+}) teleports:CreateSection("Teleport")
+local credits = main:CreateTab({
+    Name = "Credits",
+    Icon = "rbxassetid://10723396402"
+}) credits:CreateSection("Credits")
 
