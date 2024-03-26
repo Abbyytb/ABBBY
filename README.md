@@ -1,3 +1,5 @@
+
+})
 Tab:AddBind({
 	Name = "K",
 	Default = Enum.KeyCode.K,
@@ -5,8 +7,6 @@ Tab:AddBind({
 	Callback = function()
 		print("press")
 	end    
-})
-
 --[[
 Name = <string> - The name of the bind.
 Default = <keycode> - The default value of the bind.
@@ -61,4 +61,19 @@ Tab:AddButton({
 Name = <string> - Anti AFK
 Callback = <function> - Make the player afk
 
+]]
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+--[[
+Name = <string> - Auto Farming:
+Default = <string> - 1
+Options = <table> - Auto Farm Coins, Auto Farm Pet
+Callback = <function> - The function of the dropdown.
 ]]
