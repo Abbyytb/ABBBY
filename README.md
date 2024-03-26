@@ -15,7 +15,7 @@ CloseCallback = <function> - (function) when close <string> Abby
 ]]
 
 local Tab = Window:MakeTab({
-	Name = "Tab 1",
+	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -36,7 +36,7 @@ Name = <string> - Main Section:
 ]]
 
 local Tab = Window:MakeTab({
-	Name = "Tab 1",
+	Name = "Auto Farm",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
