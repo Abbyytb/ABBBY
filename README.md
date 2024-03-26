@@ -44,8 +44,6 @@ Tab:AddButton({
 --[[
 Name = <string> - Anti AFK
 Callback = <function> - Make the player afk
-  
-]]
 
 local Tab = Window:MakeTab({
 	Name = "Farming",
@@ -76,4 +74,6 @@ Tab:AddButton({
 
 --[[
 Name = <string> - Farms for you
-Callback = <function> - Auto farms
+Callback = <function> - Auto farms 
+
+]]
