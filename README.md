@@ -1,6 +1,5 @@
-
-})
-Tab:AddBind({
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+Tab:AddBind
 	Name = "K",
 	Default = Enum.KeyCode.K,
 	Hold = false,
@@ -13,8 +12,6 @@ Default = <keycode> - The default value of the bind.
 Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
 Callback = <function> - The function of the bind.
 
-
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Made by Abby", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -49,12 +46,12 @@ local Section = Tab:AddSection({
 Name = <string> - Main Section
 
 
-Tab:AddButton({
+Tab:AddButton
 	Name = "AFK",
 	Callback = function()
       		print("button pressed")
   	end    
-{{
+
 
 Name = <string> - Anti AFK
 Callback = <function> - Make the player afk
