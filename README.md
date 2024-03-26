@@ -64,7 +64,7 @@ local Section = Tab:AddSection({
 })
 
 --[[
-Name = <string> - Farm Section
+Name = <string> - Farming
 ]]
 
 Tab:AddButton({
