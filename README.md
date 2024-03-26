@@ -35,8 +35,22 @@ local Section = Tab:AddSection({
 Name = <string> - Main Section:
 ]]
 
+--[[
+Name = <string> - AFK
+Callback = <function> - AFK
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Auto Farm",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
